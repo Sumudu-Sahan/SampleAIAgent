@@ -40,8 +40,8 @@ MODEL = _env("OPENAI_MODEL", "gpt-4o-mini")
 # LLM Service Provider binding. When you add the provider under the agent's
 # Configure -> LLM configuration in Agent Manager, set the environment
 # variable names to LLM_PROVIDER_URL (url) and LLM_PROVIDER_KEY (apikey).
-LLM_PROVIDER_URL = _env("OPENAI_URL")
-LLM_PROVIDER_KEY = _env("OPENAI_API_KEY")
+LLM_PROVIDER_URL = _env("LLM_AGENT_OPENAI_URL")
+LLM_PROVIDER_KEY = _env("LLM_AGENT_OPENAI_API_KEY")
 # Default API-key header of an Agent Manager LLM proxy. Change it only if the
 # provider's Security settings use a different header name.
 LLM_PROVIDER_AUTH_HEADER = _env("LLM_PROVIDER_AUTH_HEADER", "API-Key")
