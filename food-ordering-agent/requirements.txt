@@ -1,0 +1,9 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+langchain-openai>=0.3,<2.0
+langchain-mcp-adapters>=0.1,<1.0
+langgraph>=0.3,<2.0
+
+# Agent Manager's auto-instrumentation (opentelemetry-instrumentation-langchain)
+# needs wrapt 1.x; wrapt 2.x removed a keyword argument it uses.
+wrapt>=1.14,<2.0
